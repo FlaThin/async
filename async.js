@@ -3,9 +3,15 @@ const getPokemons = () => new Promise(async (res, rej) => {
     
     const consulta =  await fetch("http://192.168.150.217:3000/pokemons");
 
-    const data = await consulta.json();
+    if(consulta.ok){
 
-    res(data);
+        const data = await consulta.json();
+
+        res(data);
+        
+    }else{
+        rej("Houve um erro");
+    }
 
 });
 
@@ -13,9 +19,15 @@ const getPokemonsByID = pokemon => new Promise(async (res, rej) => {
     
     const resultado = await fetch(`http://192.168.150.217:3000/pokemons/${pokemon}`);
 
-    const data = await resultado.json();
+    if(resultado.ok){
 
-    res(data);
+        const data = await resultado.json();
+
+        res(data);
+
+    }else{
+        rej("Houve um erro, pokemon não encontrado!");
+    }
 
 });
 
