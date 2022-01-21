@@ -4,4 +4,8 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/asy
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
+1 PONTO 
+COMO ESTAMOS LIDANDO COM FUNÇÕES ASSINCRONAS!
 
+2 PONTO 
+QUAL DESSES CÓDIGOS PARECE DE MAIS FACIL COMPREENSÃO
